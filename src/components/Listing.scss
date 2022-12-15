@@ -1,0 +1,51 @@
+// TODO: Convert sizes to rem value variables
+
+.listing {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  margin-bottom: 40px;
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+.listing-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: var(--color-blue-500);
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.listing-subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: var(--color-gray-900);
+
+}
+
+.listing-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.listing-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  flex: 1 1;
+  width: 100%;
+}

@@ -1,3 +1,4 @@
+import { Badge } from "./Badge"
 import "./ImageBlock.scss"
 
 export interface ImageBlockProps {
@@ -14,11 +15,11 @@ export const ImageBlock = (props: ImageBlockProps) => {
       {props.labels.length > 0 && (
         <div className={"label-container"}>
           {props.labels.map((label, index) => {
-            return null // Your label component
+            return <Badge key={index} variation="callout">{label}</Badge>
           })}
         </div>
       )}
-      <img src={props.imageURL} alt={"A photo of the building"} />
+      <img src={props.imageURL} alt={""} />
       <div className={"deadline"}>{`Application Deadline: ${props.deadline}`}</div>
     </div>
   )
