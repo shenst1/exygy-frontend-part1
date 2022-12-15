@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead tr {
+  background-color: var(--color-gray-400);
+}
+thead th {
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--size-3);
+  line-height: var(--size-4);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-gray-200);
+}
+th {
+  background-color: var(--color-gray-750);
+  color: white;
+}
+
+td {
+  padding: 12px 30px 12px 30px;
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--size-3_5);
+  line-height: 18px;
+}

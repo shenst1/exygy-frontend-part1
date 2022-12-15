@@ -8,10 +8,7 @@
   width: 100%;
   position: relative;
   margin-right: 0;
-  margin-bottom: var(--size-5);
-
   @media (min-width: 1024px) {
-    margin-right: var(--size-5);
     margin-bottom: 0;
   }
 
@@ -29,5 +26,12 @@
   }
 
   .label-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: var(--size-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-2);
   }
 }
